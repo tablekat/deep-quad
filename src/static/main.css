@@ -1,0 +1,46 @@
+
+body{
+  margin: 0;
+  font-family: sans-serif;
+}
+
+#main{
+  width: 100vw;
+  height: 100vh;
+}
+
+#info{
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: white;
+  box-shadow: 4px 2px 6px rgba(0, 0, 0, 0.3);
+  padding: 16px;
+}
+
+.score-control{
+  display: inline-block;
+  position: relative;
+  min-width: 200px;
+  background: #bbb;
+  padding: 3px;
+  margin: 6px;
+  color: #444;
+}
+.score-control > * {
+  z-index: 5;
+  position: relative;
+}
+.score-bg {
+  position: absolute;
+  top: 0; bottom: 0;
+  left: 50%; right: 50%;
+  background: #f66;
+  z-index: 2;
+}
+.score-value {
+  display: inline-block;
+  color: #111;
+  position: absolute;
+  right: 3px;
+}

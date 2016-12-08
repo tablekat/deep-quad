@@ -1,0 +1,30 @@
+{
+  "name": "deepqube",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack",
+    "watch": "webpack --watch --progress --profile --colors --display-error-details --display-cached",
+    "serve": "webpack-dev-server --content-base build/ --port 8088 --hot --open"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.0",
+    "html-webpack-plugin": "^2.24.1",
+    "raw-loader": "^0.5.1",
+    "ts-loader": "^1.2.2",
+    "typescript": "^2.0.10",
+    "typings": "^2.0.0",
+    "webpack": "^2.1.0-beta.25",
+    "webpack-dev-server": "^1.16.2"
+  },
+  "dependencies": {
+    "cannon": "^0.6.2",
+    "convnet": "^1.0.0",
+    "three": "^0.82.1"
+  }
+}
